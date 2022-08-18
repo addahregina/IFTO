@@ -1,0 +1,55 @@
+  /* 
+   * 
+   * 
+   * Exemplos de estrutura
+    ${this.runtimeTye} -> mostra o tipo em tempo de execução
+   mixin ClasseX on ClasseY{
+    
+   }
+  abstract class Classe with(pode ser classe abstrata ou mixing) Classe2, Classe 3...{}
+  class Classe4 extends Classe2 with Classe3{}
+  
+  abstract class ClasseZ{}
+  mixing ClassK on ClasseZ{
+    void todo(){
+    ...
+    }
+  }
+  main(){
+    Classe().metodo('');
+  }
+  
+  
+  
+  //pode ser usado para metodos ou funções de uma linha
+  void ClassN => (fatArrow) print('it's works);
+  var FuncaoX = (num a, num b) => a+b;
+  print(FuncaoX(1,2));
+  
+  
+  class Dolphin extends Bird{}
+  
+  //fatarrow
+
+  */
+  
+  mixin Hello {
+   void hello(){
+       for (int i = 0; i < 5; i++) {
+      print('hello moto ${i + 1}');
+     }  
+    }   
+  }
+  
+  mixin Bye {void saygoodbye() => print('Goodbye');}
+  
+   class Say with Hello {
+    void sayhello(String nome){
+      hello();
+    }
+  }
+
+void main() {  
+ var x = Say();
+ x.hello();  
+}
